@@ -1,5 +1,5 @@
-File Monitor Design
-###################
+Endpoint Monitor Design
+#######################
 :date: 2013-02-26 11:36
 :author: Laurence Noton
 :category: Design
@@ -19,7 +19,7 @@ Being framework independent means that the whole configuration needs to be boots
 
 Alternatives:
 
-Spring integration - the sftp monitor doesn't let you check to ensure the file isn't still be written to (stable).  of course you could do this yourself, but your design becomes messy.  The integration layer should just do this in a self contained cohensive unit.
+Spring integration - the sftp adapter doesn't let you check to ensure the file isn't still being written to (i.e. stable) - we deal with very large files!  Of course you could do this yourself, but your design becomes messy.  The integration layer should just do this in a self contained cohensive unit.
 
-<insert name> Service Bus - Most don't check file size so you could end up with half written file, and most are just too heavy weight for what we want.
+<insert name> Service Bus - Most don't check file size so we have the same problem as above, and most are just too heavy weight for what we want.
 
