@@ -6,4 +6,4 @@ Images work...
 
 .. image:: static/images/baba-profile.jpg
 
-I'll be able to load up some pen and pencil designs now.
+I'll be able to write some blogs which contain some diagrams now.
